@@ -134,7 +134,7 @@ function dynamicOutput() {
 
     let fontSizeOfCurrent = getComputedStyle(current).fontSize // css em arquivo externo, esse metodo permite acessar 
     let overflowOfCurrent = getComputedStyle(current).overflowWrap
-    // console.log("---------------------------------")
+    // console.log("----------------- para debug ----------------")
     // console.log("altura da fonte", fontSizeOfCurrent)
     // console.log("valor do overflowWrap", overflowOfCurrent)
     // console.log("largura do atual calculo", current.clientWidth)
