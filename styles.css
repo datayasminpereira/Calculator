@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;  /* 100% da altura da tela, seja essa de qualquer tamanho*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 95vh;
+    width: 360px; /* antes 400px*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.output {
+    position: relative;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.auxiliary-output {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.previous-operation {
+    position: relative;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #dadce0;
+
+}
+
+.previous-old, .previous-recent {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45%;
+
+}
+
+.auxiliary-current {
+    position: relative;
+    height: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 40px;
+    color: #fff;
+}
+.current-operation {
+    position: relative;
+    height: 60%;
+    font-size: 40px;
+    color: #fff;
+
+}
+
+
+.box-buttons {
+    position: relative;
+    height: 65%;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+
+    border-top: 1px solid #dadce0;
+}
+
+.box-buttons button {
+    background-color: black;
+    font-size: 25px;
+    border: 1px transparent;
+    border-radius: 6px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.box-buttons .not-operator {
+    color: #FFF
+}
+
+.box-buttons .operator {
+    color: #F26430;
+}
+
+#equals {
+    background-color: #EC4407;
+    color: #FFF;
+    
+}
+
+.not-operator:hover {
+    border: 1px solid #dadce0;
+}
+.operator:hover {
+    background-color:  #F26430;
+    color: #fff;
+    border: 1px solid #dadce0;
+}
+
+#equals:hover {
+    box-shadow: 1px 1px 2.5px 0px rgba(255,255, 255, 0.9), -1px -1px 2.5px 0px rgba(255,255, 255, 0.9);
+}
